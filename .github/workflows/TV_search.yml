@@ -1,5 +1,5 @@
 name: Sync and Run Script
-on:
+于:
   workflow_dispatch:
   schedule:
     - cron: '0 */12 * * *'
@@ -17,3 +17,12 @@ jobs:
           git fetch upstream
       - name: Merge Upstream Changes
         run: |git merge upstream/main --no-edit
+        
+        name: Configure Git Identity
+run: |
+git config --global user.name "1374913826"
+git config --global user.emai "1374913826@qq.com"
+name: Push Changes
+run: git push origin main
+        
+        
