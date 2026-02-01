@@ -16,12 +16,12 @@ jobs:
           git remote add upstream https://github.com/Supprise0901/TVBox_live.git
           git fetch upstream
       - name: Merge Upstream Changes
-        run: |git merge upstream/main --no-edit
+      git merge upstream/main --no-edit
         
         name: Configure Git Identity
 run: |
-git config --global user.name "1374913826"
-git config --global user.emai "1374913826@qq.com"
+          git config --global user.name "1374913826"
+          git config --global user.email"1374913826@qq.com"
 name: Push Changes
 run: git push origin main
         
