@@ -1,6 +1,6 @@
 name: Sync and Run Script
 # 触发条件：手动触发+每12小时自动触发
-于:
+*于:
   workflow_dispatch:
   schedule:
     - cron: '0 22,10 * * *'
