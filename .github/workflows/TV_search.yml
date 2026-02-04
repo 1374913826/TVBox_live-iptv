@@ -1,31 +1,21 @@
-name: Sync and Run Script
-
-  workflow_dispatch:
+name: Sync TVBox Live
+on:
   schedule:
-    - cron: '0 22,10 * * *'
+    - cron: "0 0,6,12,18 * * *"
+  workflow_dispatch:
 jobs:
-  build:
+  sync:
     runs-on: ubuntu-latest
     steps:
-      # 1. 拉取当前仓库代码
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      # 2. 添加上游仓库地址并拉取最新代码
-      - name: Add Upstream and Fetch
+      - uses: actions/checkout@v4
+      - name: Sync upstream repo
         run: |
           git remote add upstream https://github.com/Supprise0901/TVBox_live.git
           git fetch upstream
-      # 3. 合并上游代码到当前分支
-      - name: Merge Upstream Changes
-        run: |
-          git config --global user.name "1374913826"
-          git config --global user.email "1374913826@qq.com"
+          git checkout main
           git merge upstream/main --no-edit
-      # 4. 推送合并后的代码到当前仓库
-      - name: Push Changes
+      - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          分支: main
+          branch: main
