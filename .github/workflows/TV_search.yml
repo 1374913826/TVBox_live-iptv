@@ -1,1 +1,25 @@
-
+name: Sync live.txt only
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+jobs:
+  sync-live:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Download live.txt from upstream
+        run: |
+          curl -L https://raw.staticdn.net/Supprise0901/TVBox_live/main/live.txt -o live.txt
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add live.txt
+          if ! git diff --cached --quiet; then
+            git commit -m "sync: update live.txt at $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+            git push
+          fi
