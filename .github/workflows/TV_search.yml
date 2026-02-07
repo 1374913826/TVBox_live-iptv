@@ -1,6 +1,8 @@
 name: Sync live.txt from upstream
-schedule:
-    - cron: '0 */3 * * *'  # 每 3 小时同步一次
+
+on:
+  schedule:
+    - cron: '0 */3 * * *'   # 每 3 小时同步一次
   workflow_dispatch:
 
 jobs:
@@ -11,12 +13,14 @@ jobs:
       uses: actions/checkout@v4
       with:
         fetch-depth: 0
+
     - name: Fetch upstream
       run: |
-        git remote add upstream https://github.com/Supprise0901/TVBox_live.git
+        git remote add upstream https://github.com/Supprise0901/TVBox_live.git || true
         git fetch upstream
         git checkout main
         git checkout upstream/main -- live.txt
+
     - name: Commit and push
       run: |
         git config user.name "github-actions"
