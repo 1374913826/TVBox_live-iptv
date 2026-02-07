@@ -1,8 +1,8 @@
 name: Sync live.txt from upstream
 
-on:
+于:
   schedule:
-    - cron: '0 */3 * * *'  # 每 6 小时同步一次
+    - cron: '0 */3 * * *'  # 每 3 小时同步一次
   workflow_dispatch:
 
 jobs:
