@@ -352,3 +352,71 @@
         "cid": 150
     }
 ]
+{
+  "lives": [
+    {
+      "name": "IPTV",
+      "video_streams": "https://gh-proxy.com/raw.githubusercontent.com/alenin-zhang/IPTV/master/lenin.txt"
+    },
+    {
+      "name": "尼古拉斯",
+      "video_streams": "https://gh-proxy.com/raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt"
+    },
+    {
+      "name": "猫影视TV",
+      "video_streams": "http://rihou.cc:555/gggg.nzk"
+    },
+    {
+      "name": "易发TV",
+      "video_streams": "http://tvv.tw/github.com/fafa002/yf2025/blob/main/yiyifafa.txt"
+    },
+    {
+      "name": "酒店源",
+      "video_streams": "https://d.kstore.dev/download/8344/1电信酒店.txt"
+    },
+    {
+      "name": "组播",
+      "video_streams": "https://40.tv1288.xyz/"
+    },
+    {
+      "name": "杰克TV3",
+      "video_streams": "https://php.946985.filegear-sg.me/jackTV.m3u"
+    },
+    {
+      "name": "风云TV4",
+      "video_streams": "http://iptv.4666888.xyz/FYTV.txt"
+    },
+    {
+      "name": "LLTV5",
+      "video_streams": "https://gh-proxy.com/raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg1.m3u"
+    },
+    {
+      "name": "黄蚂蚁TV6",
+      "video_streams": "http://ge.html-5.me//ii/黄蚂蚁先锋推流源.txt"
+    },
+    {
+      "name": "XYTV7",
+      "video_streams": "https://2026.tv1288.xyz"
+    },
+    {
+      "name": "OWTV8",
+      "video_streams": "https://gitee.com/OscarWilde/itv/raw/master/tv.txt"
+    },
+    {
+      "name": "Mursor-TV",
+      "video_streams": "https://live.ottiptv.cc/iptv.m3u?userid=7601455084&sign=8d90bbf8aeac077cf2f4cc84a6a67a9ef5cdf776237a4c716b75a37c33c5c3044f0630b937bb210c795ead158d3bf3fdc9ef716881d7f57e146ae978afcc3e31526b2cdae71fd0&auth_token=47968e58f2b34cace69dbe0d0fc69b93"
+    },
+    {
+      "name": "仅测试频道",
+      "video_streams": "https://123.tv1288.xyz/jav.txt"
+    },
+    {
+      "name": "10000电影集",
+      "video_streams": "https://gh-proxy.com/raw.githubusercontent.com/alenin-zhang/IPTV/master/10000.txt"
+    },
+    {
+      "name": "30000电影集",
+      "video_streams": "https://gh-proxy.com/raw.githubusercontent.com/alenin-zhang/IPTV/master/30000.txt"
+    }
+  ]
+}
