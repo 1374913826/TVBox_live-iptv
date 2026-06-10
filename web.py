@@ -14,7 +14,7 @@ URLS = [
     "https://php.946985.filegear-sg.me/jackTV.m3u",
     "http://iptv.4666888.xyz/FYTV.txt",
     "https://gh-proxy.com/raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg1.m3u",
-    "http://ge.html-5.me//ii/黄蚂蚁先锋推流源.txt",
+    "https://migu.wdnas.ccwu.cc/",
     "https://2026.tv1288.xyz",
     "https://gitee.com/OscarWilde/itv/raw/master/tv.txt",
     "https://live.ottiptv.cc/iptv.m3u?userid=7601455084&sign=8d90bbf8aeac077cf2f4cc84a6a67a9ef5cdf776237a4c716b75a37c33c5c3044f0630b937bb210c795ead158d3bf3fdc9ef716881d7f57e146ae978afcc3e31526b2cdae71fd0&auth_token=47968e58f2b34cace69dbe0d0fc69b93",
